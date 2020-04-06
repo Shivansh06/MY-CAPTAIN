@@ -1,0 +1,23 @@
+x=int(input("How many lists do you wish to enter : "))
+i=0
+while i<x:
+    #for each list
+    inputl=[]
+    outputl=[]
+    print("Enter the size of list ",i+1) 
+    no_of_ele=int(input())
+    print("Start entering the elements of list ",i+1)
+    j=0
+    while j<no_of_ele:
+        ele=int(input())
+        inputl.append(ele)
+        j=j+1
+    print("List ",i+1)
+    print(inputl)
+    for positivenumber in inputl:
+        if positivenumber>0:
+            outputl.append(positivenumber)
+    print("Output List ",i+1)
+    print(outputl)
+            
+    i=i+1
