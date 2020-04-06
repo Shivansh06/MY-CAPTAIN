@@ -24,3 +24,29 @@ print(list2)
 
 print("list 3 =")
 print(list3)
+
+
+
+
+#Accessing elements from a tuple
+mytuple=(1,2,3,4,5,6)
+print("Which element do you wish to access ?")
+x=int(input())
+print("The element you wished to access is ")
+print(mytuple[x-1])   #x-1 because the index starts from 0 
+
+
+
+#deleting different elements from a dictionary
+PlanetDict={"Mercury":1,"Venus":2,"Earth":3}
+print("Which planet do you want to remove from the dictionary :")
+y=input()
+if y=="Mercury":
+    del PlanetDict["Mercury"]
+elif y=="Venus":
+    del PlanetDict["Venus"]
+elif y=="Earth":
+    del PlanetDict["Earth"]
+    
+print(PlanetDict)
+
