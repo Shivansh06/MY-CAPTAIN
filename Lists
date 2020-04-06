@@ -1,0 +1,26 @@
+#Assigning elements to different list 
+list1=[1,2,3,4,5]
+list2=[6,7,8]
+list3=[9,10]
+choice='y'
+while choice=='y':
+    print("In which list do you wish to add element : ")
+    x=int(input())
+    print("Enter the element you wish to add to list ",x)
+    ele=int(input())
+    if x==1:
+        list1.append(ele)
+    elif x==2:
+        list2.append(ele)
+    else:
+        list3.append(ele)    
+    print("do you wish to continue ?? (y/n)")
+    choice=input()
+print("list1 =")
+print(list1)
+
+print("list2 =")
+print(list2)
+
+print("list 3 =")
+print(list3)
